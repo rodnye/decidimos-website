@@ -6,6 +6,12 @@ This is the open-source repository for decidimos, based on [Decidim](https://git
 
 ## Setting up the application
 
+Startup command:
+
+```bash
+bin/rails assets:precompile
+```
+
 You will need to do some steps before having the app working properly once you have deployed it:
 
 1. Create a System Admin user: `bin/rails decidim_system:create_admin`
