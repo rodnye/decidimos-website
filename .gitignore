@@ -1,0 +1,57 @@
+# ignorar migraciones
+/db/migrate
+/config/credentials*
+
+# estos son los js.map que genera shakapacker
+/public/sw.*
+
+# ignorar docs
+/app/views/static/api/docs
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-*
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+/public/assets
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+# Ignore env configuration files
+.env
+.envrc
+.rbenv-vars
+
+# Ignore the files and folders generated through Webpack
+/public/decidim-packs
+/public/packs-test
+/public/sw.js
+/public/sw.js.map
+
+# Ignore node modules
+/node_modules
+
+
+# Ignore Tailwind configuration
+tailwind.config.js
