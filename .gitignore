@@ -39,7 +39,7 @@
 /config/master.key
 
 # Ignore env configuration files
-.env
+.env*
 .envrc
 .rbenv-vars
 
