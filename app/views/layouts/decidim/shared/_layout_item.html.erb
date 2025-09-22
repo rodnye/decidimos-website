@@ -1,0 +1,21 @@
+<div role="complementary">
+  <%= yield :item_header %>
+</div>
+<div class="<%= layout_item_classes %>">
+  <main class="layout-item__main">
+    <% if params[:included_in] %>
+      <%= render partial: "layouts/decidim/shared/linked_resource" %>
+    <% end %>
+
+    <%= yield %>
+  </main>
+  <aside class="layout-item__aside" aria-label="aside">
+    <%= yield :aside %>
+  </aside>
+  <%# this aside is for moving comments and versions at the bottom of the page only in responsive. %>
+  <% if content_for?(:item_footer) %>
+    <aside class="layout-item__main layout-item__aside--footer" aria-label="comments">
+      <%= yield :item_footer %>
+    </aside>
+  <% end %>
+</div>
