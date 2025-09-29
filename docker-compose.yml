@@ -1,28 +1,41 @@
-services:
-  web:
-    build: .
-    ports:
-      - "3000:3000"
-    environment:
-      - RAILS_ENV=${RAILS_ENV:-production}
-      - DATABASE_URL=${DATABASE_URL}
-    volumes:
-      - .:/app
-      - bundle_cache:/usr/local/bundle
-    depends_on:
-      - db
-    command: bash -c "rm -f tmp/pids/server.pid && bin/rails server -b 0.0.0.0"
 
+services:
   db:
-    image: postgres:15-bullseye
+    image: postgres:15
     environment:
-      POSTGRES_USER: ${DATABASE_USERNAME:-decidimos}
-      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-1234}
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+      POSTGRES_USER: decidim_app
+      POSTGRES_PASSWORD: thepassword
+      POSTGRES_DB: decidim_app
     ports:
       - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - decidim-network
+
+  app:
+    build: .
+    environment:
+      DATABASE_HOST: db
+      DATABASE_USERNAME: decidim_app
+      DATABASE_PASSWORD: thepassword
+      DATABASE_URL: postgresql://decidim_app:thepassword@db:5432/decidim_app
+      RAILS_ENV: development
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    networks:
+      - decidim-network
+    volumes:
+      - .:/app
+      - bundle_data:/usr/local/bundle
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec bin/rails s -p 3000 -b '0.0.0.0'"
 
 volumes:
-  bundle_cache:
   postgres_data:
+  bundle_data:
+
+networks:
+  decidim-network:
+    driver: bridge
