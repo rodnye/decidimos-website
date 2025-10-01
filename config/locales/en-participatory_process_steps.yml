@@ -1,0 +1,18 @@
+---
+en:
+  decidim:
+    admin:
+      participatory_process_steps:
+        step1:
+          title: "Phase 1. Preparation and Organization"
+          description: "The internal team defines the rules, budget, and communication strategy."
+
+        step2: 
+          title: "Phase 2. Presentation and Collection of Proposals"
+          description: "Workshops are held with citizens to identify needs and gather their project ideas."
+        step3:
+          title: "Phase 3. Prioritization and Drafting of the Preliminary Project"
+          description: "Proposals are deliberated, the most viable ones are selected, and integrated into a formal document."
+        step4:
+          title:  "Phase 4. Approval, Oversight, and Monitoring"
+          description: "Responsible for the official approval of the budget, its dissemination, and the formation of a monitoring team."
