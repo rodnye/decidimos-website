@@ -1070,7 +1070,7 @@ es:
     help:
       main_topic:
         default_page:
-          content: "<p>En %{organization} puedes participar y decidir sobre diferentes temas, a través de los espacios que ves en el menú superior: Procesos, Asambleas, Iniciativas, Consultas.</p> <p>Dentro de cada uno encontrarás diferentes opciones para participar: hacer propuestas (individualmente o con otras personas), tomar parte en debates, priorizar proyectos a ejecutar, asistir a encuentros presenciales y otras acciones.</p>\n"
+          content: "<p>En %{organization} puedes participar y decidir sobre diferentes temas, a través de los espacios que ves en el menú superior: Áreas, Asambleas, Iniciativas, Consultas.</p> <p>Dentro de cada uno encontrarás diferentes opciones para participar: hacer propuestas (individualmente o con otras personas), tomar parte en debates, priorizar proyectos a ejecutar, asistir a encuentros presenciales y otras acciones.</p>\n"
           title: '¿Qué puedo hacer en %{organization}?'
         description: Lee más sobre %{organization}.
         title: General
@@ -1335,10 +1335,11 @@ es:
       pad: Pad
     pages:
       home:
+      
         extended:
           debates: Debates
           debates_explanation: Debate y discute, comparte tus opiniones y enriquece los temas relevantes.
-          how_to_participate: '¿Cómo participo en un proceso?'
+          how_to_participate: '¿Cómo participo en un área?'
           meetings: Encuentros
           meetings_explanation: Averigua dónde y cuándo puedes participar en encuentros públicos.
           more_info: Más información sobre %{resource_name}
@@ -1350,7 +1351,7 @@ es:
           register: Regístrate
         hero:
           participate: Participa
-          participate_title: Participa en los procesos de la plataforma
+          participate_title: Participa en las áreas de la plataforma
           welcome: Bienvenido a %{organization}!
         statistics:
           headline: Estado actual de %{organization}

@@ -1,0 +1,18 @@
+---
+es:
+  decidim:
+    admin:
+      participatory_process_steps:
+        step1:
+          title: "Fase 1. Preparación y Organización"
+          description: "El equipo interno define las reglas, el presupuesto y la estrategia de comunicación."
+
+        step2: 
+          title: "Fase 2. Presentación y Recopilación de Propuestas"
+          description: "Se realizan talleres con la ciudadanía para identificar necesidades y recoger sus ideas de proyectos."
+        step3:
+          title: "Fase 3. Priorización y Elaboración del Anteproyecto"
+          description: "Se delibera sobre las propuestas, se seleccionan las más viables y se integran en un documento formal."
+        step4:
+          title:  "Fase 4. Aprobación, Vigilancia y Seguimiento"
+          description: "Se encarga de la aprobación oficial del presupuesto, su divulgación y la formación de un equipo de supervisión."      
