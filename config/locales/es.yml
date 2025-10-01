@@ -56,16 +56,16 @@ es:
     models:
       decidim/attachment_created_event: Archivo adjunto
       decidim/component_published_event: Componente activo
-      decidim/demoted_membership: Ya no eres una administradora de grupo
+      decidim/demoted_membership: Ya no eres un administrador de grupo
       decidim/gamification/badge_earned_event: Insignia obtenida
       decidim/gamification/level_up_event: Has subido de nivel
-      decidim/invited_to_group_event: Invitada al grupo
+      decidim/invited_to_group_event: Invitado al grupo
       decidim/join_request_accepted_event: Solicitud de incorporación aceptada
       decidim/join_request_rejected_event: Solicitud de incorporación rechazada
       decidim/profile_updated_event: Perfil actualizado
-      decidim/promote_to_admin: Promocionada a administradora del grupo
-      decidim/promoted_to_admin_event: Promocionada a administradora del grupo
-      decidim/removed_from_group: Eliminada del grupo
+      decidim/promote_to_admin: Promocionado a administrador del grupo
+      decidim/promoted_to_admin_event: Promocionado a administrador del grupo
+      decidim/removed_from_group: Eliminado del grupo
       decidim/resource_endorsed_event: Adhesión a recurso realizada
       decidim/resource_hidden_event: Recurso oculto
       decidim/user_group_created_event: Grupo creado
@@ -283,19 +283,19 @@ es:
         delete: "%{user_name} eliminó la página estática %{resource_name}"
         update: "%{user_name} actualizó la página estática %{resource_name}"
       user:
-        block: "%{user_name} ha bloqueado a la usuaria %{resource_name}"
-        invite: "%{user_name} invitó a la participante %{resource_name} con el rol: %{role}"
-        officialize: "%{user_name} oficializó a la participante %{resource_name}"
+        block: "%{user_name} ha bloqueado al usuario %{resource_name}"
+        invite: "%{user_name} invitó al participante %{resource_name} con el rol: %{role}"
+        officialize: "%{user_name} oficializó al participante %{resource_name}"
         promote: "%{user_name} ha promocionado a %{resource_name}"
-        remove_from_admin: "%{user_name} eliminó a la participante %{resource_name} con el rol: %{role}"
-        show_email: "%{user_name} ha recuperado el correo electrónico de la participante %{resource_name}"
-        transfer: "%{user_name} ha transferido a la participante %{resource_name}"
-        unblock: "%{user_name} desoficializó a la usuaria %{resource_name}"
-        unofficialize: "%{user_name} ha desoficializado a la participante %{resource_name}"
+        remove_from_admin: "%{user_name} eliminó al participante %{resource_name} con el rol: %{role}"
+        show_email: "%{user_name} ha recuperado el correo electrónico del participante %{resource_name}"
+        transfer: "%{user_name} ha transferido al participante %{resource_name}"
+        unblock: "%{user_name} desoficializó al usuaria %{resource_name}"
+        unofficialize: "%{user_name} ha desoficializado al participante %{resource_name}"
       user_group:
-        block: "%{user_name} ha bloqueado al grup de usuarias %{resource_name}"
+        block: "%{user_name} ha bloqueado al grupo de usuarios %{resource_name}"
         reject: "%{user_name} rechazó la verificación del grupo %{resource_name}"
-        unblock: "%{user_name} ha desbloqueado el grupo de usuarias %{resource_name}"
+        unblock: "%{user_name} ha desbloqueado el grupo de usuarios %{resource_name}"
         verify: "%{user_name} verificó el grupo %{resource_name}"
         verify_via_csv: "%{user_name} verificó el grupo %{resource_name} través de un archivo CSV"
       user_moderation:
@@ -341,10 +341,10 @@ es:
           promoted: Promocionar a %{amendable_type}.
           rejected: Esta enmienda para la %{amendable_type} %{proposal_link} ha sido rechazada el <strong>%{date}</strong>.
           withdrawn: |-
-            Esta enmienda para la %{amendable_type} %{proposal_link} ha sido retirada por su autora.
+            Esta enmienda para la %{amendable_type} %{proposal_link} ha sido retirada por su autor.
       name: Enmienda
       new:
-        amendment_author: Autora de la enmienda
+        amendment_author: Autor de la enmienda
         send: Crear
         title: Crear borrador de enmienda
       preview_draft:
@@ -419,7 +419,7 @@ es:
       dummy_authorization_workflow:
         name: Flujo de trabajo de autorización de ejemplo
       errors:
-        duplicate_authorization: Ya hay una participante autorizada con los mismos datos. Una administradora se pondrá en contacto contigo para verificar tus datos.
+        duplicate_authorization: Ya hay un participante autorizado con los mismos datos. Un administrador se pondrá en contacto contigo para verificar tus datos.
       expired_at: Caducado el %{timestamp}
       expires_at: Caduca el %{timestamp}
       foo_authorization:
@@ -440,7 +440,7 @@ es:
           title: La autorización ha expirado
         incomplete:
           cancel: Cancelar
-          explanation: 'A pesar de que actualmente estás autorizada con "%{authorization}", necesitamos que te vuelvas a autorizar porque nos faltan los datos siguientes:'
+          explanation: 'A pesar de que actualmente estás autorizado con "%{authorization}", necesitamos que te vuelvas a autorizar porque nos faltan los datos siguientes:'
           invalid_field: "%{field}"
           reauthorize: Reautorizarse
           title: Por favor, reautorízate
@@ -449,9 +449,9 @@ es:
           explanation: Para llevar a cabo esta acción, tienes que disponer de la autorización "%{authorization}".
           title: Autorización requerida
         ok:
-          title: Has sido autorizada mientras estás en esta página. Por favor, vuelve a cargar la página para realizar tu acción.
+          title: Has sido autorizado mientras estás en esta página. Por favor, vuelve a cargar la página para realizar tu acción.
         pending:
-          explanation: Para realizar esta acción, debes estar autorizada con "%{authorization}", pero tu autorización todavía está en curso.
+          explanation: Para realizar esta acción, debes estar autorizado con "%{authorization}", pero tu autorización todavía está en curso.
           resume: Comprueba el progreso de tu autorización "%{authorization}".
           title: La autorización aún está en progreso
         unauthorized:
@@ -466,7 +466,7 @@ es:
           title: Confirma tu email
     block_user_mailer:
       notify:
-        body_1: Tu cuenta ha sido bloqueda.
+        body_1: Tu cuenta ha sido bloqueada.
         body_2: 'Motivo: %{justification}'
         greetings: Saludos, <br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
         hello: Hola,
@@ -703,7 +703,7 @@ es:
         reference: Referencia
         request_method: Método de solicitud
         title: Ha habido un problema con nuestro servidor
-        try_later: Inténtalo de nuevo más tarde. Si el error persiste, por favor copia la siguiente información y envíala a las mantenedoras de la plataforma con cualquier otra información que quieras compartir.
+        try_later: Inténtalo de nuevo más tarde. Si el error persiste, por favor copia la siguiente información y envíala a los mantenedores de la plataforma con cualquier otra información que quieras compartir.
         unknown: Desconocido
         url: URL
         user: ID de participante
@@ -760,7 +760,7 @@ es:
         emendation_promoted:
           follower:
             email_intro: 'Se ha publicado una enmienda para %{amendable_title}. Puedes verla en esta página:'
-            email_outro: Has recibido esta notificación porque es autora de %{amendable_title}.
+            email_outro: Has recibido esta notificación porque es autor de %{amendable_title}.
             email_subject: Una enmienda de %{emendation_author_nickname} se ha publicado como un nuevo %{amendable_type}
       attachments:
         attachment_created:
@@ -792,17 +792,17 @@ es:
           notification_title: "¡Enhorabuena! ¡Has alcanzado el nivel %{current_level} de la insignia \n <a href=\"%{resource_path}\">%{badge_name}</a> \"!"
       groups:
         demoted_membership:
-          email_intro: Una administradora del grupo <a href="%{resource_url}">%{user_group_name}</a> ha eliminado tus permisos de administración para ese grupo.
+          email_intro: Un administrador del grupo <a href="%{resource_url}">%{user_group_name}</a> ha eliminado tus permisos de administración para ese grupo.
           email_outro: Has recibido esta notificación porque eres miembro de este grupo.
-          email_subject: Ya no eres administradora del grupo %{user_group_name}.
-          notification_title: Ya no eres administradora del grupo <a href="%{resource_path}">%{user_group_name}</a>.
+          email_subject: Ya no eres administrador del grupo %{user_group_name}.
+          notification_title: Ya no eres administrador del grupo <a href="%{resource_path}">%{user_group_name}</a>.
         invited_to_group:
-          email_intro: Un administradora del grupo <a href="%{resource_url}">%{user_group_name}</a> te ha invitado a unirte a él.
+          email_intro: Un administrador del grupo <a href="%{resource_url}">%{user_group_name}</a> te ha invitado a unirte a él.
           email_outro: Has recibido esta notificación porque te han invitado a un grupo. Por favor, revisa la pestaña Grupos en tu perfil para aceptar la invitación.
           email_subject: Te han invitado a unirte al grupo %{user_group_name}
           notification_title: Te han invitado a unirte al grupo <a href="%{resource_path}">%{user_group_name}</a> . Revisa la pestaña <a href="%{groups_profile_tab_path}">Grupos</a> en tu perfil para aceptar la invitación!
         join_request_accepted:
-          email_intro: '¡Felicidades! Una administradora del grupo <a href="%{resource_url}">%{user_group_name}</a> ha aceptado tu solicitud para unirte a él.'
+          email_intro: '¡Felicidades! Un administrador del grupo <a href="%{resource_url}">%{user_group_name}</a> ha aceptado tu solicitud para unirte a él.'
           email_outro: Has recibido esta notificación porque tu solicitud de incorporación al grupo se ha actualizado.
           email_subject: Tu solicitud para unirte al grupo %{user_group_name} ha sido aceptada!
           notification_title: Has sido aceptada al grupo <a href="%{resource_path}">%{user_group_name}</a>.
@@ -812,19 +812,19 @@ es:
           email_subject: Alguien ha solicitado unirse al grupo %{user_group_name}
           notification_title: Alguien ha solicitado unirse al grupo %{user_group_name}. Puedes aceptar o rechazar la solicitud desde <a href="%{resource_path}">la página de miembros del grupo</a>.
         join_request_rejected:
-          email_intro: Una administradora del grupo <a href="%{resource_url}">%{user_group_name}</a> ha rechazado tu solicitud para unirte a él.
+          email_intro: Un administrador del grupo <a href="%{resource_url}">%{user_group_name}</a> ha rechazado tu solicitud para unirte a él.
           email_outro: Has recibido esta notificación porque tu solicitud de incorporación al grupo se ha actualizado.
           email_subject: Tu solicitud para unirte al grupo %{user_group_name} ha sido rechazada!
           notification_title: Tu solicitud para unirte al grupo <a href="%{resource_path}">%{user_group_name}</a> ha sido rechazada.
         promoted_to_admin:
-          email_intro: Una administradora del grupo <a href="%{resource_url}">%{user_group_name}</a> te ha otorgado permisos de administración para este grupo.
+          email_intro: Un administrador del grupo <a href="%{resource_url}">%{user_group_name}</a> te ha otorgado permisos de administración para este grupo.
           email_outro: Has recibido esta notificación porque eres miembro de este grupo.
-          email_subject: '¡Ahora eres administradora del grupo %{user_group_name}!'
-          notification_title: Ahora eres administradora del grupo <a href="%{resource_path}">%{user_group_name}</a>.
+          email_subject: '¡Ahora eres administrador del grupo %{user_group_name}!'
+          notification_title: Ahora eres administrador del grupo <a href="%{resource_path}">%{user_group_name}</a>.
         removed_from_group:
-          email_intro: Una administradora del grupo <a href="%{resource_url}">%{user_group_name}</a> te ha eliminado de éste.
+          email_intro: Un administrador del grupo <a href="%{resource_url}">%{user_group_name}</a> te ha eliminado de éste.
           email_outro: Has recibido esta notificación porque eras miembro de ese grupo.
-          email_subject: '¡Has sido eliminada del grupo %{user_group_name}!'
+          email_subject: '¡Has sido eliminado del grupo %{user_group_name}!'
           notification_title: Has sido eliminado del grupo <a href="%{resource_path}">%{user_group_name}</a>.
         user_group_created:
           email_intro: Se ha creado un nuevo grupo con el nombre %{user_group_name}. Ahora puedes verificarlo, si procede, en el <a href="%{groups_admin_url}">panel de administración</a>.
@@ -842,11 +842,11 @@ es:
         notification_title: Se ha producido un evento en <a href="%{resource_path}">%{resource_title}</a>.
       reports:
         resource_hidden:
-          email_intro: Una administradora eliminó su %{resource_type} porque ha sido reportado como %{report_reasons}.
+          email_intro: Un administrador eliminó su %{resource_type} porque ha sido reportado como %{report_reasons}.
           email_outro: Has recibido esta notificación porque se ha eliminado un contenido que creaste.
           email_subject: Tu %{resource_type} ha sido eliminado
           notification_title: |-
-            Una administradora eliminó tu %{resource_type} porque ha sido reportado como %{report_reasons}.</br>
+            Un administrador eliminó tu %{resource_type} porque ha sido reportado como %{report_reasons}.</br>
             <i>%{resource_content}</i>
       resource_endorsed:
         email_intro: '%{endorser_name} %{endorser_nickname}, a quien sigues, acaba de adherirse a "%{resource_title}" que puede ser interesante para ti, compruébalo y contribuye:'
@@ -891,8 +891,8 @@ es:
       value: Valor
     followers:
       followers_count:
-        one: "%{count} seguidora"
-        other: "%{count} seguidoras"
+        one: "%{count} seguidor"
+        other: "%{count} seguidores"
       no_followers: Aún no hay seguidores.
     following:
       following_count:
@@ -966,11 +966,11 @@ es:
           conditions:
             - Estar activo y seguir a otras personas seguramente hará que otras personas te sigan.
           description: Este distintivo se otorga cuando alcanzas un cierto número de seguidores. %{organization_name} es una red social y política, teje tu web para comunicarte con otras personas en la plataforma.
-          description_another: Esta participante tiene %{score} seguidores.
+          description_another: Este participante tiene %{score} seguidores.
           description_own: "%{score} personas te están siguiendo."
           name: Seguidores
           next_level_in: '¡Consigue que te sigan %{score} personas más para alcanzar el siguiente nivel!'
-          unearned_another: Esta participante todavía no tiene seguidoras.
+          unearned_another: Este participante todavía no tiene seguidoras.
           unearned_own: Aún no te sigue nadie.
         index:
           badge_title: "Insignia %{name}"
@@ -986,11 +986,11 @@ es:
         are_you_sure: '¿Seguro? Esto no eliminará a la participante del grupo.'
         demote_admin: Eliminar permisos de administración
       demote:
-        error: Se ha producido un error al eliminar esta participante de la lista de administradoras.
+        error: Se ha producido un error al eliminar esta participante de la lista de administradores.
         success: Permisos de administración eliminados correctamente.
       index:
-        current_admins: 'Administradoras actuales:'
-        manage_admins: Gestionar administradoras
+        current_admins: 'Administradores actuales:'
+        manage_admins: Gestionar administradores
     group_invites:
       accept:
         error: Se ha producido un error al aceptar esta invitación.
@@ -1002,7 +1002,7 @@ es:
         invite_user: Invitar a una participante
       invite:
         error: Se ha producido un error al invitar a esta participante.
-        success: Participante invitada correctamente.
+        success: Participante invitado correctamente.
       pending_invitations: Solicitudes pendientes
       reject:
         error: Se ha producido un error al rechazar esta invitación.
@@ -1014,19 +1014,19 @@ es:
         success: Solicitud de unirse correctamente aceptada.
       actions:
         are_you_sure: '¿Seguro?'
-        promote_to_admin: Hacer administradora
+        promote_to_admin: Hacer administrador
         remove_from_group: Eliminar participante
       index:
         current_members_without_admins: 'Miembros actuales (sin administradores):'
         manage_members: Gestionar los miembros
       promote:
-        error: Se ha producido un error al promocionar a esta participante.
-        success: Participante promocionada correctamente.
+        error: Se ha producido un error al promocionar a este participante.
+        success: Participante promocionado correctamente.
       reject:
         error: Se ha producido un error al rechazar esta solicitud de incorporación al grupo.
         success: Solicitud de unirse rechazada correctamente.
       remove:
-        error: Se ha producido un error al eliminar a esta participante del grupo.
+        error: Se ha producido un error al eliminar a este participante del grupo.
         success: Participante eliminada correctamente del grupo.
     groups:
       actions:
@@ -1049,10 +1049,10 @@ es:
         success: La solicitud para formar parte se ha enviado correctamente. Una administradora revisará tu solicitud antes de aceptarte en el grupo.
       leave:
         error: Se ha producido un error al dejar el grupo.
-        last_admin: No puedes abandonar este grupo porque eres la última administradora. Haz administradora a otra miembro para poder abandonar el grupo.
+        last_admin: No puedes abandonar este grupo porque eres el último administrador. Haz administrador a otro miembro para poder abandonar el grupo.
         success: Has dejado el grupo correctamente.
       members:
-        accept_or_reject_join_requests: 'Las siguientes participantes han solicitado unirse a este grupo. Acepta o rechaza sus solicitudes:'
+        accept_or_reject_join_requests: 'Los siguientes participantes han solicitado unirse a este grupo. Acepta o rechaza sus solicitudes:'
         accept_request: Aceptar
         reject_request: Rechazar
       new:
@@ -1061,8 +1061,8 @@ es:
         subtitle: Crea un grupo e invita a otras participantes a unirse para participar a nivel colectivo.
       no_user_groups: Aún no pertenece a ningún grupo.
       roles:
-        admin: Administradora
-        creator: Administradora
+        admin: Administrador
+        creator: Administrador
         member: Miembro
       update:
         error: Se ha producido un error al actualizar el grupo.
@@ -1131,13 +1131,13 @@ es:
     messaging:
       conversation_mailer:
         comanagers_new_conversation:
-          admin_in_group: Recibes esta notificación porque eres administradora de %{group}.
+          admin_in_group: Recibes esta notificación porque eres administrador de %{group}.
           greeting: Hola, %{recipient}!
           intro: "%{manager} ha iniciado una nueva conversación en nombre de %{group}. Para verla y responder, inicia tu sesión y haz clic en el enlace que encontrarás más abajo:"
           outro: '¡Disfruta de la plataforma!'
           subject: "%{manager} ha iniciado una nueva conversación como %{group}"
         comanagers_new_message:
-          admin_in_group: Recibes esta notificación porque eres administradora de %{group}.
+          admin_in_group: Recibes esta notificación porque eres administrador de %{group}.
           greeting: Hola, %{recipient}!
           intro: "%{manager} ha publicado nuevos mensajes en una conversación en nombre de %{group}. Para verlos y responder, inicia tu sesión y haz clic en el enlace que encontrarás más abajo:"
           outro: '¡Disfruta de la plataforma!'
@@ -1148,13 +1148,13 @@ es:
           outro: '¡Disfruta de la plataforma!'
           subject: "%{sender} ha iniciado una conversación contigo"
         new_group_conversation:
-          admin_in_group: Recibes esta notificación porque eres administradora de %{group}.
+          admin_in_group: Recibes esta notificación porque eres administrador de %{group}.
           greeting: Hola, %{recipient}!
           intro: "%{sender} ha iniciado una nueva conversación con el grupo %{group}. Para verlo y responder, inicia tu sesión y haz clic en el enlace que encontrarás más abajo:"
           outro: '¡Disfruta de la plataforma!'
           subject: "%{sender} ha iniciado una nueva conversación con %{group}"
         new_group_message:
-          admin_in_group: Recibes esta notificación porque eres administradora de %{group}.
+          admin_in_group: Recibes esta notificación porque eres administrador de %{group}.
           greeting: Hola, %{recipient}!
           intro: "%{sender} ha añadido nuevos mensajes en la conversación con el grupo %{group}. Para verlos y responder, inicia tu sesión y haz clic en el enlace que encontrarás más abajo:"
           outro: '¡Disfruta de la plataforma!'
@@ -1166,7 +1166,7 @@ es:
           subject: Tienes nuevos mensajes de %{sender}
       conversations:
         add_conversation_users:
-          add_max_users: 'Añadir usuarias a la conversación: máximo 9 usuarias'
+          add_max_users: 'Añadir usuarios a la conversación: máximo 9 usuarios'
           add_users_placeholder: Buscar...
           modal_title: Nueva conversación
           no_results: No hay resultados
@@ -1190,7 +1190,7 @@ es:
           back: Volver a todas las conversaciones
           chat_with: Conversación con
           deleted_accounts: No puedes tener una conversación con cuentas eliminadas.
-          not_allowed: Esta participante no acepta mensajes directos.
+          not_allowed: Este participante no acepta mensajes directos.
           title: Conversación con %{usernames}
         start:
           placeholder: Tu mensaje...
@@ -1205,19 +1205,19 @@ es:
         remaining: "Queda(n) %{time_distance}"
     metrics:
       blocked_users:
-        description: Número de participantes bloqueadas
+        description: Número de participantes bloqueados
       download:
         csv: Descargar datos (CSV)
       followers:
         description: Número de participantes que siguen este espacio de participación
-        object: seguidoras
+        object: seguidores
         title: Seguidores
       participants:
-        description: Número de participantes activas en la organización
+        description: Número de participantes activos en la organización
         object: participantes
         title: Participantes
       reported_users:
-        description: Número de participantes reportadas
+        description: Número de participantes reportados
       user_reports:
         description: Número de denuncias realizadas por participantes
       users:
@@ -1227,7 +1227,7 @@ es:
     newsletter_mailer:
       newsletter:
         no_reply_notice: Este correo electrónico se ha enviado desde una dirección de correo de notificación que no acepta entrada de correos. Por favor, no respondas a este mensaje.
-        note: Has recibido este correo electrónico porque estás suscrita a boletines de noticias en %{organization_name}. Puedes cambiar esta opción en la <a href="%{link}">configuración de las notificaciones</a>.
+        note: Has recibido este correo electrónico porque estás suscrito a boletines de noticias en %{organization_name}. Puedes cambiar esta opción en la <a href="%{link}">configuración de las notificaciones</a>.
         see_on_website: '¿No puedes ver este correo electrónico correctamente? Accede a su <a href="%{link}" target="_blank" class="see-on-website">versión web</a>.'
         unsubscribe: Para desactivar la recepción este tipo de correo electrónico, <a href="%{link}" target="_blank" class="unsubscribe">unsubscríbete</a>.
     newsletter_templates:
@@ -1263,9 +1263,9 @@ es:
         success: La configuración del boletín de noticias se ha actualizado correctamente.
     newsletters_opt_in_mailer:
       notify:
-        body_1: El procesamiento de datos personales y su protección es cada vez más importante para todas nosotras. Con el nuevo Reglamento General de Protección de Datos (RGPD) del 25 de mayo de 2018, las personas tienen un mayor control sobre sus datos personales. Por este motivo, necesitamos tu autorización para seguir enviándote información relevante sobre las actividades del %{organization_name}.
+        body_1: El procesamiento de datos personales y su protección es cada vez más importante para todos nosotros. Con el nuevo Reglamento General de Protección de Datos (RGPD) del 25 de mayo de 2018, las personas tienen un mayor control sobre sus datos personales. Por este motivo, necesitamos tu autorización para seguir enviándote información relevante sobre las actividades del %{organization_name}.
         body_2: '¿Cómo puedes darnos tu consentimiento? Simplemente haz clic en el siguiente botón:'
-        body_3: Con este consentimiento, podrás continuar recibiendo información sobre los servicios de la plataforma. Si, por el contrario, no recibimos una confirmación positiva de tu parte, dejaremos de enviarte nuestros mensajes. Si confirmas que deseas mantenerte informada, siempre tendrás la opción de cancelar en cualquier momento.
+        body_3: Con este consentimiento, podrás continuar recibiendo información sobre los servicios de la plataforma. Si, por el contrario, no recibimos una confirmación positiva de tu parte, dejaremos de enviarte nuestros mensajes. Si confirmas que deseas mantenerte informado, siempre tendrás la opción de cancelar en cualquier momento.
         button: Sí, quiero continuar recibiendo información relevante
         greetings: Saludos,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
         hello: Hola,
@@ -1292,12 +1292,12 @@ es:
         daily: 'Estas son las notificaciones del último día basadas en la actividad que estás siguiendo:'
         real_time: 'Esta es una notificación sobre la actividad que sigues:'
         weekly: 'Estas son las notificaciones de la última semana basadas en la actividad que estás siguiendo:'
-      outro: Has recibido estas notificaciones porque sigues este contenido o a sus autoras. Puedes dejar de seguirlas desde sus respectivas páginas.
+      outro: Has recibido estas notificaciones porque sigues este contenido o a sus autores. Puedes dejar de seguirlos desde sus respectivas páginas.
       see_more: Ver más notificaciones
       subject: Este es tu correo resumen
     notifications_settings:
       show:
-        administrators: Administradoras
+        administrators: Administradores
         allow_public_contact: Permitir que cualquier participante me envíe un mensaje directo, incluso si no la sigo.
         allow_push_notifications: Recibe notificaciones emergentes para estar al día de lo que pasa en la plataforma. Puedes desactivarlas en cualquier momento.
         direct_messages: Recibir mensajes directos de cualquiera
@@ -1388,18 +1388,18 @@ es:
         error: Se ha producido un error al actualizar la contraseña.
         success: La contraseña se ha actualizado correctamente.
     profile:
-      deleted: Participante eliminada
+      deleted: Participante eliminado
       inaccessible_message: '¡Este perfil es inaccesible debido a la violación de términos y condiciones de uso!'
     profiles:
       default_officialization_text_for_user_groups: Este grupo está verificado públicamente, su nombre se ha verificado para que se corresponda con su nombre real.
-      default_officialization_text_for_users: Esta participante está verificada públicamente. Se ha verificado que su nombre o cargo corresponde con su nombre y función reales.
+      default_officialization_text_for_users: Este participante está verificado públicamente. Se ha verificado que su nombre o cargo corresponde con su nombre y función reales.
       show:
         activity: Actividad
         badges: Insignias
         conversations: Conversaciones
-        followers: Seguidoras
+        followers: Seguidores
         following: Siguiendo
-        group_admins: Gestionar administradoras
+        group_admins: Gestionar administradores
         group_members: Gestionar los miembros
         groups: Grupos
         members: Miembros
@@ -1411,11 +1411,11 @@ es:
           disabled_message: Mensaje
           edit_profile: Edita el perfil
           edit_user_group: Edita el perfil del grupo
-          invite_user: Invita a la participante
+          invite_user: Invita al participante
           join_user_group: Solicita unirse al grupo
           leave_user_group: Deja el grupo
           manage_user_group: Gestionar el grupo
-          manage_user_group_admins: Gestionar administradoras
+          manage_user_group_admins: Gestionar administradores
           manage_user_group_users: Gestionar los miembros
           message: Mensaje
           resend_email_confirmation_instructions: Reenvia un correo electrónico con las instrucciones de confirmación
@@ -1441,7 +1441,7 @@ es:
         report_html: <p>El siguiente <a href="%{url}">contenido</a> se ha ocultado automáticamente por %{moderator}.</p>
         subject: Un recurso ha sido oculto por %{moderator}
       report:
-        authors: Autoras
+        authors: Autores
         content: Contenido reportado
         content_original_language: Idioma del contenido original
         date: Reportado el
@@ -1456,7 +1456,7 @@ es:
     reports:
       create:
         error: Se ha producido un error al denunciar el contenido. Por favor, inténtalo otra vez.
-        success: El contenido se ha denunciado con éxito y será revisado por una administradora.
+        success: El contenido se ha denunciado con éxito y será revisado por un administrador.
       hide:
         success: Se ha ocultado este recurso.
       parent_hidden:
@@ -1515,7 +1515,7 @@ es:
         help: El siguiente formulario filtra los resultados de búsqueda dinámicamente cuando se cambian las condiciones de búsqueda.
         skip: Saltar a los resultados
       flag_modal:
-        already_reported: Este contenido ya fue denunciado y será revisado por una administradora.
+        already_reported: Este contenido ya fue denunciado y será revisado por un administrador.
         close: Cerrar
         description: Este contenido no es apropiado?
         does_not_belong: Contiene actividad ilegal, amenazas de suicidio, información personal o cualquier otra cosa que creas que no pertenece a %{organization_name}.
@@ -1527,9 +1527,9 @@ es:
         spam: Contiene clickbait, publicidad o estafas.
         title: Reportar contenido inapropiado
       flag_user_modal:
-        already_reported: Este contenido ya ha sido reportado y será revisado por una administradora.
-        block: Bloquear a esta participante
-        description: '¿Qué tiene de inapropiado esta participante?'
+        already_reported: Este contenido ya ha sido reportado y será revisado por un administrador.
+        block: Bloquear a este participante
+        description: '¿Qué tiene de inapropiado este participante?'
         does_not_belong: Contiene actividad ilegal, amenazas de suicidio, información personal o cualquier otra cosa que creas que no pertenece a %{organization_name}.
         hide: Esconder todos sus contenidos
         offensive: Contiene el racismo, el sexismo, los golpes personales, las amenazas de muerte, las peticiones de suicidio o cualquier forma de discurso de odio.
@@ -1544,13 +1544,13 @@ es:
         please_log_in: Por favor, inicia la sesión
         sign_up: Crea una cuenta
       mentions_modal:
-        remove_recipient: Eliminar destinataria %{name}
+        remove_recipient: Eliminar destinatario %{name}
       participatory_space_filters:
         filters:
           area: Área
           areas: Áreas
           scope: Ámbito
-          select_an_area: Selecciona una area
+          select_an_area: Selecciona un área
       progress: Progreso
       public_participation:
         public_participation: Mostrar mi asistencia públicamente
@@ -1588,8 +1588,8 @@ es:
       show_translated: Mostrar el texto traducido automáticamente
     user_activity:
       index:
-        no_activities_warning: Esta participante no ha tenido ninguna actividad todavía.
-    user_contact_disabled: Esta participante no acepta mensajes directos.
+        no_activities_warning: Este participante no ha tenido ninguna actividad todavía.
+    user_contact_disabled: Este participante no acepta mensajes directos.
     user_conversations:
       create:
         error: El mensaje no se ha podido crear. Vuelve a intentarlo más tarde.
@@ -1615,12 +1615,12 @@ es:
         success: Tus intereses se han actualizado correctamente.
     user_report_mailer:
       notify:
-        body_1: La usuaria %{user} ha sido reportada por %{token}
+        body_1: El usuario %{user} ha sido reportado por %{token}
         body_2: 'Motivo: %{reason}'
-        details: Datos proporcionados por la usuaria
+        details: Datos proporcionados por el usuario
         greetings: Saludos,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
         hello: Hola %{admin},
-        subject: Una nueva usuaria ha sido reportada en %{organization_name}
+        subject: Un nuevo usuario ha sido reportado en %{organization_name}
     user_update_mailer:
       notify:
         body_1: Recibes este mensaje para informarte de una actualización de tu cuenta.
@@ -1701,12 +1701,12 @@ es:
         decline: Rechazar invitación
         hello: Hola %{email},
         ignore: |-
-          Si no deseas aceptar la invitación, por favor ignora este correo electrónico.<br /> Tu cuenta no se creará hasta que accedas al enlace de arriba y establezcas tu nombre de usuaria y contraseña.
+          Si no deseas aceptar la invitación, por favor ignora este correo electrónico.<br /> Tu cuenta no se creará hasta que accedas al enlace de arriba y establezcas tu nombre de usuario y contraseña.
         invited_you_as_admin: "%{invited_by} te ha invitado como administradora de %{application}. Puedes aceptarlo a través del siguiente enlace."
-        invited_you_as_private_user: "%{invited_by} te ha invitado como participante privada de %{application}. Puedes aceptar a través del siguiente enlace."
+        invited_you_as_private_user: "%{invited_by} te ha invitado como participante privado de %{application}. Puedes aceptar a través del siguiente enlace."
         someone_invited_you: Alguien te ha invitado a %{application}. Puedes aceptar la invitación a través del siguiente enlace.
-        someone_invited_you_as_admin: Alguien te ha invitado como administradora de %{application}, puedes aceptar a través del siguiente enlace.
-        someone_invited_you_as_private_user: Alguien te ha invitado como participante privada de %{application}, puedes aceptar a través del siguiente enlace.
+        someone_invited_you_as_admin: Alguien te ha invitado como administrador de %{application}, puedes aceptar a través del siguiente enlace.
+        someone_invited_you_as_private_user: Alguien te ha invitado como participante privado de %{application}, puedes aceptar a través del siguiente enlace.
         subject: Instrucciones de invitación
       invite_admin:
         subject: Te han invitado a administrar %{organization}
@@ -1925,13 +1925,13 @@ es:
             type: Tipo
           items:
             _session_id:
-              description: Permite a los sitios web recordar a la usuaria dentro de un sitio web cuando se mueve entre páginas web.
+              description: Permite a los sitios web recordar al usuario dentro de un sitio web cuando se mueve entre páginas web.
               service: Esta página web
             decidim-consent:
               description: Almacena información sobre las cookies permitidas por la usuaria en esta página web.
               service: Esta página web
             pwaInstallPromptSeen:
-              description: Guarda el estado si la notificación de instalación de la aplicación web progresiva (PWA) ya ha sido vista por la usuaria.
+              description: Guarda el estado si la notificación de instalación de la aplicación web progresiva (PWA) ya ha sido vista por el usuario.
               service: Esta página web
           types:
             cookie: Cookie
@@ -1950,13 +1950,13 @@ es:
             title: Analíticas y estadísticas
           description: Utilizamos cookies para asegurar las funcionalidades básicas del sitio web y para mejorar tu experiencia en línea. Puedes configurar y aceptar el uso de las cookies, y modificar tus opciones de consentimiento en cualquier momento.
           essential:
-            description: Estas cookies permiten la funcionalidad clave del sitio web y ayudan a mantener a sus usuarias seguras. Se guardan automáticamente en el navegador y no se pueden desactivar.
+            description: Estas cookies permiten la funcionalidad clave del sitio web y ayudan a mantener a sus usuarios seguros. Se guardan automáticamente en el navegador y no se pueden desactivar.
             title: Esenciales
           marketing:
             description: Estas cookies recopilan información sobre cómo utilizas el sitio web y se pueden utilizar para proporcionarte un servicio más personalizado en los diferentes espacios en los que participas.
             title: Marketing
           preferences:
-            description: Estas cookies permiten que el sitio web recuerde las opciones que se han elegido en el pasado en este sitio web para proporcionar una experiencia más personalizada a las usuarias.
+            description: Estas cookies permiten que el sitio web recuerde las opciones que se han elegido en el pasado en este sitio web para proporcionar una experiencia más personalizada a los usuarios.
             title: Preferencias
           save_settings: Guardar configuración
           title: Configuración de cookies
@@ -1984,7 +1984,7 @@ es:
         user_menu: Menú de usuario
       impersonation_warning:
         close_session: Cerrar sesión
-        description_html: Estás gestionando la participante <b>%{user_name}</b>.
+        description_html: Estás gestionando el participante <b>%{user_name}</b>.
         expire_time_html: Su sesión expirará en <b><span class="minutes">%{minutes}</span> minutos</b>.
       language_chooser:
         choose_language: Elegir el idioma
