@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-namespace :custom do
+namespace :tools do
   desc "Modifies confirmation_token and sets confirmed_at"
   task :accept, [:email] => :environment do |_t, args|
     email = args[:email]
