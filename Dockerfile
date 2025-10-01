@@ -29,6 +29,11 @@ RUN gem install bundler
 RUN bundle install
 
 RUN npm install
+ENV DATABASE_HOST db
+      ENV DATABASE_USERNAME decidim_app
+      ENV DATABASE_PASSWORD thepassword
+      ENV DATABASE_URL postgresql://decidim_app:thepassword@db:5432/decidim_app
+      ENV RAILS_ENV development
 RUN bin/rails assets:precompile
 
 EXPOSE 3000
