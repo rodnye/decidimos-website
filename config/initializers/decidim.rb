@@ -156,7 +156,8 @@ Decidim.configure do |config|
   # end
 
   # Currency unit
-  config.currency_unit = Rails.application.secrets.decidim[:currency_unit] if Rails.application.secrets.decidim[:currency_unit].present?
+  # config.currency_unit = Rails.application.secrets.decidim[:currency_unit] if Rails.application.secrets.decidim[:currency_unit].present?
+  config.currency_unit = "CUP"
 
   # Workaround to enable SVG assets cors
   config.cors_enabled = Rails.application.secrets.decidim[:cors_enabled].present?

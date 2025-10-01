@@ -24,5 +24,8 @@ module Decidimos
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # TODO: Modo de desarrollo solamente, remover para producción
+    Rails.application.config.hosts << /.*/
   end
 end
